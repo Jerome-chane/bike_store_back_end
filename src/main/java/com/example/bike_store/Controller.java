@@ -38,6 +38,9 @@ public class Controller {
 //        if(isGuest(authentication)){
 //            return new ResponseEntity<>(makeMap("error", "You must be logged to make a return"), HttpStatus.UNAUTHORIZED); // if user is not logged in this will send UNAUTHORIZED
 //        }
+        if(repo_rental.getStartDuration()>duration){
+            return new ResponseEntity<>(makeMap("error", "the return duration must be higher or equal to the start duration"),HttpStatus.UNAUTHORIZED);
+        }
         repo_rental.returnBike(duration,return_date);
         rentalRespository.save(repo_rental); // save the changes made
         return new ResponseEntity<>(makeMap("ok", "bikes successfully returned"),HttpStatus.ACCEPTED);

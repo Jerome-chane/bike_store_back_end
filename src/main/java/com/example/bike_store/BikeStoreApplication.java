@@ -43,15 +43,15 @@ public class BikeStoreApplication {
 	@Bean
 	public CommandLineRunner initData(PersonRepository personRepository, BikeRepository bikeRepository) {
 		return (args) -> {
-		   Person u1 = new Person("Jerome","c","j.com", "admin",passwordEncoder().encode("123"));
-			Person u2 = new Person("Bob","s","b.com", "customer",passwordEncoder().encode("123"));
-			personRepository.save(u1);personRepository.save(u2);
-			Bike b1 = new Bike("Cruiser", "Nice Brand", "Normal", "https://ebrobizi.es/wp-content/uploads/2016/12/Ebrobizi-Ebike-Flebi-SUPRA-2016-02.jpg",10, 6);
-			Bike b2 = new Bike("Ultra Deluxe", "Shimano", "Normal", "https://fabricbike.com/123-large_default/fixed-gear-original.jpg",10, 4);
-			Bike b3 = new Bike("City Driver", "NCB", "Normal","https://a-bike.eu/wp-content/uploads/2017/07/touring-bike-rental.jpg", 10, 3);
-			Bike b4 = new Bike("Mountain killer", "BMC", "Mountain", "https://media.alltricks.com/hd/5c45df5df01e8.jpg",12, 2);
-			Bike b5 = new Bike("Trek Deluxe", "Subaru", "Mountain","https://www.bikelec.es/media/catalog/product/cache/1/image/1200x1020/9df78eab33525d08d6e5fb8d27136e95/s/t/stamina-montana-electrica-1000w_1.jpg", 12, 1);
-			bikeRepository.save(b1);bikeRepository.save(b2);bikeRepository.save(b3);bikeRepository.save(b4);bikeRepository.save(b5);
+//		   Person u1 = new Person("Jerome","c","j.com", "admin",passwordEncoder().encode("123"));
+//			Person u2 = new Person("Bob","s","b.com", "customer",passwordEncoder().encode("123"));
+//			personRepository.save(u1);personRepository.save(u2);
+//			Bike b1 = new Bike("Cruiser", "Nice Brand", "Normal", "https://ebrobizi.es/wp-content/uploads/2016/12/Ebrobizi-Ebike-Flebi-SUPRA-2016-02.jpg",10, 6);
+//			Bike b2 = new Bike("Ultra Deluxe", "Shimano", "Normal", "https://fabricbike.com/123-large_default/fixed-gear-original.jpg",10, 4);
+//			Bike b3 = new Bike("City Driver", "NCB", "Normal","https://a-bike.eu/wp-content/uploads/2017/07/touring-bike-rental.jpg", 10, 3);
+//			Bike b4 = new Bike("Mountain killer", "BMC", "Mountain", "https://media.alltricks.com/hd/5c45df5df01e8.jpg",12, 2);
+//			Bike b5 = new Bike("Trek Deluxe", "Subaru", "Mountain","https://www.bikelec.es/media/catalog/product/cache/1/image/1200x1020/9df78eab33525d08d6e5fb8d27136e95/s/t/stamina-montana-electrica-1000w_1.jpg", 12, 1);
+//			bikeRepository.save(b1);bikeRepository.save(b2);bikeRepository.save(b3);bikeRepository.save(b4);bikeRepository.save(b5);
 		};
 	}
 }
